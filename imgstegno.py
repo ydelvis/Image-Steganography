@@ -48,7 +48,7 @@ def encode():
     data = input("\nenter message:")
     if len(data) == 0:
         raise ValueError("Empty data")
-    enc_img = input("\nenter encoded image name:")
+    enc_img = input("\nEnter encoded image name:")
     enc_data = hidedata(image, data)
     cv2.imwrite(enc_img, enc_data)
     img1 = Image.open(enc_img, 'r')
